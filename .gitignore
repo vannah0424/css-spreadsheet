@@ -1,18 +1,105 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+Savannah Jenkins, 02/10/2025
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+/* Header */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+/* Navigation */
+nav {
+    background: #003366;
+    padding: 10px;
+    text-align: center;
+}
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #004080;
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #004080;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #002040;
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+    main {
+        padding: 10px;
+    }
+}
